@@ -1,0 +1,28 @@
+.main {
+background-image: url("./media/netflix-background.jpg");
+height: 700px;
+background-size: cover;
+position: relative;
+height: 80vh;
+}
+.main .blackScreen {
+    height: 100%;
+    background-color: black;
+    background-position: center center;
+    opacity: 0.45;
+    position: absolute;
+    top: 0
+
+}
+nav {
+    display: flex;
+    width: 80%;
+    background-color: aquamarine;
+    position: relative;
+    margin: auto;
+    
+}
+.logo {
+    height: 130px;
+    opacity: 1;
+}
