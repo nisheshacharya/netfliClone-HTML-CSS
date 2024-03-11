@@ -1,28 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+button {
+    background-color: red;
+    color: white;
+    border-radius: 5%;
+    border: none;
+}
+
+
+.martel-sans-semibold {
+    font-family: "Martel Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  }
+
 .main {
 background-image: url("./media/netflix-background.jpg");
-height: 700px;
-background-size: cover;
+background-size: cover ;
 position: relative;
-height: 80vh;
+height: 125vh;
+margin-top: -8px;  
+}
+.main img {
+    transform: scale(1.25) translateY(-10%);
+    
+    
 }
 .main .blackScreen {
     height: 100%;
-    background-color: black;
+    background-color: black; 
     background-position: center center;
-    opacity: 0.45;
+    opacity: 0.6;
     position: absolute;
-    top: 0
+    top: 0;
+
+    width: 100%;
 
 }
 nav {
     display: flex;
     width: 80%;
-    background-color: aquamarine;
     position: relative;
     margin: auto;
-    
+    align-items: center;
+    justify-content:space-between;  
 }
 .logo {
     height: 130px;
     opacity: 1;
+    position: relative;
+    z-index: 9999;
 }
+button {
+    height: 30px;
+}
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: "Martel Sans", sans-serif;
+    font-size: 25px;
+    padding-top: 120px;
+
+}
+
+
+.text :nth-child(2) {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: -30px;
+}
+.text :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+}
+.input-div-container {
+    display: flex;
+    width: 80%;
+   align-self: center;
+   justify-content: center;
+   align-items: center;
+  
+}.input-div-container button {
+    height: 50px;
+    width: 200px;
+    margin-left: 10px;
+    align-self: center;
+    margin-bottom: -30px;
+}
+input {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 0.5px solid gray;
+    border-radius: 5%;
+    height: 50px;
+    width: 350px;
+    
+}
+input::placeholder{
+    color: white;
+    font-size: 23px; 
+}
+.banner {
+display: flex;
+width: 100%;
+height: 150px;
+background: rgb( 14, 27, 79 );
+background: radial-gradient(31.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100%);
+margin-top:105px ;
+box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.8);
+
+}
+
+.blackScreen-2 {
+    background-color: black;
+    height: 650px;
+    width:96.8%;
+    border: 20px solid black;
+
+}
+
+
+
+    
+
