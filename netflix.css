@@ -1,12 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
-
-button {
-    background-color: red;
-    color: white;
-    border-radius: 5%;
-    border: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 
 
 .martel-sans-semibold {
@@ -15,16 +9,29 @@ button {
   font-style: normal;
   }
 
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  button {
+    background-color: red;
+    color: white;
+    border-radius: 5%;
+    border: none;
+}
+
+
 .main {
 background-image: url("./media/netflix-background.jpg");
 background-size: cover ;
 position: relative;
-height: 125vh;
+height: 100%;
 margin-top: -8px;  
 }
 .main img {
     transform: scale(1.25) translateY(-10%);
-    
     
 }
 .main .blackScreen {
@@ -62,21 +69,28 @@ button {
     flex-direction: column;
     color: white;
     position: relative;
-    font-family: "Martel Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 25px;
     padding-top: 120px;
+    text-align: center;
 
 }
 
 
 .text :nth-child(2) {
     font-size: 20px;
-    font-weight: 400;
+    font-family: "Marterl", sans-serif ;
+    font-weight: 300;
     margin-top: -30px;
+    text-align: center;
+    margin: 1%;
 }
 .text :nth-child(3) {
     font-size: 20px;
-    font-weight: 400;
+    font-family: "Marterl", sans-serif ;
+    font-weight: 300;
+    text-align: center;
+    margin: 1%;
 }
 .input-div-container {
     display: flex;
@@ -91,6 +105,7 @@ button {
     margin-left: 10px;
     align-self: center;
     margin-bottom: -30px;
+    text-align: center;
 }
 input {
     background-color: rgba(0, 0, 0, 0.5);
@@ -113,14 +128,27 @@ background: rgb( 14, 27, 79 );
 background: radial-gradient(31.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100%);
 margin-top:105px ;
 box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.8);
+align-items: center;
+align-self: center;
+justify-content: center;
 
+}
+.banner img {
+    height: 70px;
+    margin: auto;
+    
+};
+.banner-text {
+    color: blue;
+    display: flex;
+    flex-direction: column;
 }
 
 .blackScreen-2 {
     background-color: black;
     height: 650px;
-    width:96.8%;
-    border: 20px solid black;
+    width:100%;
+   
 
 }
 
