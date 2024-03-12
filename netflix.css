@@ -18,6 +18,15 @@ a {
     font-weight: 700;
     font-style: normal;
   }
+
+  .nav-div {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
   
   button {
     background-color: red;
@@ -42,15 +51,14 @@ select {
     font-weight: bold;
     font-size: large;
     margin-left: 25%;
-    
 }
 
 .lang-icon {
     height: 20px;
-    position: absolute;
+    position: relative;
     z-index: 9;
-    right: 19.7%;
-    top:43%
+    right: 70.7%;
+    top: 11%;
 }
 
 .top-buttons {
@@ -64,6 +72,9 @@ select {
     color: white;
     font-size: larger;
     z-index: 9;
+    position: relative;
+    left: 59%;
+    bottom: 49%;
 }
 
 .main {
@@ -183,19 +194,13 @@ justify-content: center;
 .banner img {
     height: 70px;
     margin: auto;
+    opacity: 0.4;;
     
 };
 
 
-.b-t{
-    /* display: flex; */
-    /* display: flex; */
-    /* flex-direction: column; */
-}
-
-
-#b-t{
-    display: flex;
+#bt{
+    
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -203,14 +208,12 @@ justify-content: center;
     justify-items: center;
     font-family: "Marterl", sans-serif;
     text-align: left;
-    position: absolute;
-   
+    position: absolute;  
 }
 
-#b-t span{
+#bt span{
     text-align: left;
     font-size: larger;
-   
 }
 
 
@@ -223,8 +226,8 @@ justify-content: center;
 }
 .section-2 {
     display: flex;
-    justify-content: center;
-    
+    height: 100%;
+    flex-direction: row;
 }
 
 .section-text{
@@ -277,10 +280,12 @@ justify-content: center;
 /* ----------------------------------------------- */
 .section-22{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     padding-top: 10%;
    
 }
+
+
 
 .section-text{
     
@@ -449,10 +454,14 @@ justify-content: center;
     margin: auto;
     margin-top: 2%;
     padding-bottom: 10%;
+    
   }
  td {
     width: 25%;
     padding: 2px;
+    justify-content: baseline;
+    justify-items: baseline;
+    
  }
 
  .bottom-buttons {
@@ -482,8 +491,20 @@ justify-content: center;
         margin-top: -5px; 
         align-self:center;
         justify-self: left;
-      
+}
 
+@media only screen and (max-width: 800px) {
     
+    .nav-div {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        
+      }
+    button {
+        background-color: green;
+    }
 }
 
