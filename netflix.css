@@ -166,6 +166,7 @@ input::placeholder{
     
 }
 .banner {
+flex-direction: row;
 display: flex;
 width: 100%;
 height: 150px;
@@ -177,17 +178,42 @@ align-items: center;
 align-self: center;
 justify-content: center;
 
+
 }
 .banner img {
     height: 70px;
     margin: auto;
     
 };
-.banner-text {
-    color: blue;
+
+
+.b-t{
+    /* display: flex; */
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+
+#b-t{
+    display: flex;
     display: flex;
     flex-direction: column;
+    width: 70%;
+    align-items: center;
+    justify-items: center;
+    font-family: "Marterl", sans-serif;
+    text-align: left;
+    position: absolute;
+   
 }
+
+#b-t span{
+    text-align: left;
+    font-size: larger;
+   
+}
+
+
 
 .blackScreen-2 {
     background-color: black;
@@ -408,7 +434,7 @@ justify-content: center;
   }
 
   .footer-list {
-    height: 500px;
+    
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -422,10 +448,42 @@ justify-content: center;
     border-spacing: 5px;
     margin: auto;
     margin-top: 2%;
+    padding-bottom: 10%;
   }
  td {
     width: 25%;
     padding: 2px;
  }
 
+ .bottom-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3%;
+    position: relative;
+    width: 0%;
+    
+}
+.bottom-buttons button {
+    width: 120px;
+    height: 35px;
+    color: white;
+    font-size: larger;
+    z-index: 9;
+    position: relative;
+    
+}
+
+.bottom-buttons .lang-icon {
+    
+        height: 20px;
+        position: relative;
+        z-index: 9;
+        position: absolute;
+        margin-top: -5px; 
+        align-self:center;
+        justify-self: left;
+      
+
+    
+}
 
