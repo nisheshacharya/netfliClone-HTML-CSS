@@ -1,8 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
-
-
+body {
+    color: white;
+}
+a {
+    color: rgb(190, 190, 190);
+}
 .martel-sans-semibold {
     font-family: "Martel Sans", sans-serif;
   font-weight: 900;
@@ -20,8 +24,47 @@
     color: white;
     border-radius: 5%;
     border: none;
+} 
+button:hover {
+    background-color: #c20b15;
+} 
+
+select {
+    color: white;
+    background-color: black;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    position: relative;
+    height: 35px;
+    width: 170px;
+    z-index: 9;
+    right: 80px;
+    font-weight: bold;
+    font-size: large;
+    margin-left: 25%;
+    
 }
 
+.lang-icon {
+    height: 20px;
+    position: absolute;
+    z-index: 9;
+    right: 19.7%;
+    top:43%
+}
+
+.top-buttons {
+    display: flex;
+    flex-direction: row;
+    
+}
+.top-buttons button {
+    width: 120px;
+    height: 35px;
+    color: white;
+    font-size: larger;
+    z-index: 9;
+}
 
 .main {
 background-image: url("./media/netflix-background.jpg");
@@ -67,7 +110,6 @@ button {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: white;
     position: relative;
     font-family: "Poppins", sans-serif;
     font-size: 25px;
@@ -93,7 +135,7 @@ button {
     margin: 1%;
 }
 .input-div-container {
-    display: flex;
+    /* display: flex; */
     width: 80%;
    align-self: center;
    justify-content: center;
@@ -109,16 +151,19 @@ button {
 }
 input {
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
     border: 0.5px solid gray;
-    border-radius: 5%;
+    border-radius: 10px;
     height: 50px;
-    width: 350px;
-    
+    width: 350px; 
+    color: white;
+    font-size: large;
+   
 }
 input::placeholder{
-    color: white;
-    font-size: 23px; 
+    color: gray;
+    font-size:medium; 
+    font-weight: lighter;
+    
 }
 .banner {
 display: flex;
@@ -153,8 +198,7 @@ justify-content: center;
 .section-2 {
     display: flex;
     justify-content: center;
-    color: white;
-   
+    
 }
 
 .section-text{
@@ -174,7 +218,7 @@ justify-content: center;
     
   }
 
-  .second-second-text{  /* Move this rule up if needed for first section styling */
+  .second-second-text{  
     font-family:"Martel", sans-serif;
     font-size: 25px;
     text-align: left;
@@ -208,7 +252,6 @@ justify-content: center;
 .section-22{
     display: flex;
     justify-content: center;
-    color: white;
     padding-top: 10%;
    
 }
@@ -230,7 +273,7 @@ justify-content: center;
     
   }
 
-  .second-second-text{  /* Move this rule up if needed for first section styling */
+  .second-second-text{  
     font-family:"Martel", sans-serif;
     font-size: 25px;
     text-align: left;
@@ -285,8 +328,104 @@ justify-content: center;
 .poster-container-text .downloading {
     color: blue;
 }
- 
+.blackScreen-2 {
+    font-family: "Martel Sans", sans-serif;
+    
+}
+.title {
+    font-size: 45px;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: flex;
 
+}
+ 
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.faq {
+    width: 70%;
+    height: 90px;
+    background-color: rgb(41, 41, 41);
+   margin: 0.3%;
+   display: flex;
+   flex-direction: row;
+   font-family: "Martel Sans", sans-serif;
+   font-size: 30px;
+   font-weight: lighter;
+}
+.faq:hover {
+    background-color: rgb(60,60,60);
+}
+    
+.faq-question {
+    width: 85%;
+    text-align: left;
+    padding-left: 15px;
+    align-content: center;
+    margin: auto;  
+}
+.faq .plus {
+    text-align: right;
+    font-size: 50px;
+    font-weight: lighter;
+    margin: auto;
+    /* border: solid white 4px; */
+}
+
+.tail-text{  
+    font-family:"Martel", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding-top: 3%;
+    margin: auto;
+  }
+
+  .tail-text .input-div-container {
+    padding: 1%;
+    margin: auto;
+  }
+  .tail-text .input-div-container  button{
+    font-size: larger;
+  }
+
+  .footer {
+    color: rgb(190, 190, 190);
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    padding-top: 5%;
+    font-size: 15px;
+  }
+
+  .footer-list {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+  }
 
     
+  table {
+    width: 100%;
+    align-self:auto;
+    border-spacing: 5px;
+    margin: auto;
+    margin-top: 2%;
+  }
+ td {
+    width: 25%;
+    padding: 2px;
+ }
+
 
